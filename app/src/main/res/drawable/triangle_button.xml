@@ -1,0 +1,11 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="50dp"
+    android:height="50dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Define el triángulo con pathData -->
+    <path
+        android:fillColor="#0B1D39"
+        android:pathData="M50,0 L100,100 L0,100 Z" />
+</vector>

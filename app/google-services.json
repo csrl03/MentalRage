@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "899271235394",
+    "project_id": "mentalrage-c1346",
+    "storage_bucket": "mentalrage-c1346.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:899271235394:android:c7e1fadb7c015de613dadb",
+        "android_client_info": {
+          "package_name": "com.example.mentalrage"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCYbYV0S3i-tQqMA_1wovQ5HvSFG_1OS0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

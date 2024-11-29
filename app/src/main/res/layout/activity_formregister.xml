@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Formregister">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#1E1E26"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="858dp"
+                    android:contentDescription=""
+                    android:scaleType="fitXY"
+                    android:src="@drawable/wave_background"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical">
+
+                <!-- Imagen -->
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="100dp"
+                    android:layout_height="95dp"
+                    android:src="@drawable/icon_mentalrageup" />
+
+                <!-- Espaciado entre imagen y texto -->
+                <View
+                    android:layout_width="30dp"
+                    android:layout_height="0dp" />
+
+                <!-- Texto -->
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¡Registrate!"
+                    android:textSize="40sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/caesar_dressing_regular"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="220dp"
+                android:layout_marginEnd="0dp"
+                android:background="#00000000"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="56dp">
+
+                <!-- Campo de texto para "Nombre" -->
+                <EditText
+                    android:id="@+id/et_nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="30dp"
+                    android:autofillHints=""
+                    android:background="@drawable/text_field_background"
+                    android:hint="Nombre"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#4C1010" />
+
+                <!-- Campo de texto para "Contraseña" -->
+                <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="30dp"
+                    android:autofillHints=""
+                    android:hint="Correo Electronico"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/text_field_background"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#430C0C" />
+
+                <EditText
+                    android:id="@+id/et_contrasena"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="30dp"
+                    android:autofillHints=""
+                    android:hint="Contraseña"
+                    android:inputType="textPassword"
+                    android:background="@drawable/text_field_background"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#430C0C" />
+                <EditText
+                    android:id="@+id/et_confirm_contrasena"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="0dp"
+                    android:autofillHints=""
+                    android:hint="Confirma tu Contraseña"
+                    android:inputType="textPassword"
+                    android:background="@drawable/text_field_background"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#430C0C" />
+
+
+                <TextView
+                    android:id="@+id/phrase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/caesar_dressing_regular"
+                    android:text="Frase Epica"
+                    android:textAlignment="center"
+                    android:textColor="#601E1E"
+                    android:textSize="30sp"
+                    tools:ignore="HardcodedText" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/back_arrow_button_instance"
+                        layout="@layout/back_button_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <include
+                        android:id="@+id/continue_arrow_button_instance"
+                        layout="@layout/continue_button_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
